@@ -12,7 +12,7 @@
     
     Overall, NPM plays a central role in the JavaScript ecosystem, providing a convenient and efficient way for developers to share, discover, and manage reusable code packages. It has become an essential tool for JavaScript developers working on a wide range of projects, from web applications to server-side APIs and more.
     
-    1. **What is Parcel/Webpack? Why do we need it?**
+2. **What is Parcel/Webpack? Why do we need it?**
         
         Parcel and Webpack are both popular bundlers for JavaScript applications, commonly used in modern web development. 
         
@@ -26,7 +26,7 @@
         In summary, Parcel and Webpack are bundlers used in web development to simplify the process of bundling and optimizing assets, managing dependencies, and enhancing the performance of JavaScript applications. They are essential tools for modern web development workflows, enabling developers to build efficient and scalable applications.
         
     
-    3.  **What is .parcel-cache?**
+3.  **What is .parcel-cache?**
     
     The **`.parcel-cache`** directory is a folder created by Parcel bundler during the build process of a web application. It serves as a cache directory where Parcel stores cached data and intermediate build artifacts to improve build performance and avoid unnecessary recompilations.
     
@@ -40,7 +40,7 @@
     
     In summary, the **`.parcel-cache`** directory is a cache directory used by the Parcel bundler to store cached data and intermediate build artifacts. It helps improve build performance by avoiding unnecessary recompilations and reusing cached data across multiple builds.
     
-    1. **What is `npx` ?**
+4. **What is `npx` ?**
         
         **`npx`** is a command-line utility that comes bundled with npm (Node Package Manager) starting from npm version 5.2.0. It stands for "Node Package Runner" and is used to execute Node.js packages directly without having to install them globally or locally.
         
@@ -56,7 +56,7 @@
         
         In summary, **`npx`** is a convenient tool for executing Node.js packages directly from the command line, without the need for manual installation or management. It simplifies the process of running command-line tools and scripts, making it easier to work with Node.js packages in your projects.
         
-    2. What is difference between `dependencies` vs `devDependencies`?
+5. **What is difference between `dependencies` vs `devDependencies`?**
         
         In Node.js and npm (Node Package Manager), dependencies and devDependencies serve different purposes and are used in different contexts:
         
@@ -79,7 +79,7 @@
         
         It's important to distinguish between dependencies and devDependencies and to manage them appropriately in your project's **`package.json`** file. By specifying dependencies and devDependencies separately, you can ensure that your production environment only includes the necessary packages for running your application, while development tools and dependencies remain isolated to the development environment.
         
-    3. What is Tree Shaking?
+6. **What is Tree Shaking?**
     
         
         Tree shaking is a term commonly used in the context of JavaScript module bundlers, such as Webpack or Rollup. It refers to the process of eliminating dead code (i.e., unused or unreachable code) from a JavaScript bundle during the bundling process. The goal of tree shaking is to reduce the size of the final bundle, improving load times and overall performance of the application.
@@ -95,7 +95,7 @@
         
         In summary, tree shaking is a technique used by JavaScript module bundlers to eliminate dead code from a bundle, resulting in smaller bundle sizes and improved application performance. It leverages the static structure of ES modules to analyze module dependencies and remove unused code during the bundling process.
         
-    4. What is Hot Module Replacement?
+7. **What is Hot Module Replacement?**
         
         Hot Module Replacement (HMR) is a feature commonly used in modern web development, particularly with module bundlers like Webpack. HMR allows developers to update the code of a web application in real-time, without requiring a full page refresh. It enables faster development cycles by preserving the application state and applying changes to the UI dynamically, resulting in a more efficient and interactive development experience.
         
@@ -109,7 +109,7 @@
         
         HMR is commonly used in conjunction with other development tools and practices, such as code splitting, CSS modules, and component-based architecture. It is particularly useful for front-end developers working on complex web applications, enabling them to iterate quickly, experiment with different ideas, and see the results in real-time without disrupting their workflow.
         
-    5. What is `.gitignore`? What should we add and not add into it?
+8. **What is `.gitignore`? What should we add and not add into it?**
         
         **`.gitignore`** is a text file used by Git to specify intentionally untracked files and directories that Git should ignore when tracking changes in a repository. It allows developers to exclude certain files and directories from being included in version control, preventing them from being committed to the repository or showing up in **`git status`** as untracked files.
         
@@ -139,7 +139,7 @@
         
         It's important to carefully manage the contents of **`.gitignore`** to ensure that only the necessary files and directories are excluded from version control. Including unnecessary files or directories in **`.gitignore`** can lead to unintended consequences and cause issues with the project's version control.
         
-    6. What is the difference between package.json and package-lock.json?
+9. **What is the difference between package.json and package-lock.json?**
         
         **`package.json`** and **`package-lock.json`** are both files used in Node.js projects to manage dependencies, but they serve different purposes and are used in different contexts:
         
@@ -158,7 +158,7 @@
         
         In summary, **`package.json`** is a metadata file that contains project-specific configurations and dependency lists, while **`package-lock.json`** is an automatically generated file that provides a detailed record of exact dependency versions installed in the project. While **`package.json`** is manually maintained by developers, **`package-lock.json`** is automatically generated and updated by npm to ensure consistent and reproducible dependency installations. Both files are important for managing dependencies in Node.js projects and ensuring reliable and consistent builds.
         
-    7. Why should I not modify `package-lock.json`?
+10. **Why should I not modify `package-lock.json`?**
         
         Modifying the **`package-lock.json`** file directly is generally not recommended for several reasons:
         
@@ -169,7 +169,7 @@
         
         Instead of modifying **`package-lock.json`** directly, it's recommended to manage dependencies using npm or yarn commands (**`npm install`**, **`npm update`**, **`yarn add`**, etc.) and let the package manager automatically update the **`package-lock.json`** file as needed. This ensures that the **`package-lock.json`** file remains accurate and reflects the true state of the project's dependencies, leading to reliable and consistent builds across different environments.
         
-    8. What is `node_modules` ? Is it a good idea to push that on git?
+11. **What is `node_modules` ? Is it a good idea to push that on git?**
         
         **`node_modules`** is a directory created by npm (Node Package Manager) or yarn to store the dependencies of a Node.js project. When you install packages using **`npm install`** or **`yarn install`**, the package manager downloads the specified packages and their dependencies from the npm registry and saves them in the **`node_modules`** directory.
         
@@ -186,4 +186,4 @@
         
         In summary, **`node_modules`** is a directory created by npm or yarn to store the dependencies of a Node.js project. It is not recommended to include **`node_modules`** in version control, as it can significantly increase the size of the repository. Instead, rely on **`package.json`** and **`package-lock.json`** (or **`yarn.lock`**) to manage dependencies and ensure reproducible builds.
         
-    9. What is the `dist` folder?
+12. **What is the `dist` folder?**
